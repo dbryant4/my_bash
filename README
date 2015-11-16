@@ -1,0 +1,8 @@
+# My Bash Dot Files
+These are my Bash "dot files". Having to recreate my Bash config every time I start using a new computer has proven to be non-trivial.
+
+## Getting Started
+Clone this repo to `~/.my_bash` and add `[[ -s "$HOME/.my_bash/profile" ]] && source ~/.my_bash/profile` to your `.bash_profile` or `.bashrc`
+
+## Secrets
+If a file named "secrets" exists, it will be loaded. The purpose of this file is to
