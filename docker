@@ -1,0 +1,10 @@
+# Work around https://github.com/mitchellh/packer/issues/901
+export TMPDIR=~/tmp
+test -d ~/tmp || mkdir ~/tmp
+
+# start docker-machine
+docker-machine status default > /dev/null || docker-machine start default
+eval $(docker-machine env default)
+
+# Packer debugging logging
+# export PACKER_LOG=1

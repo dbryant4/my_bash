@@ -1,0 +1,5 @@
+export EDITOR=vim
+GPG_TTY=`tty`
+export GPG_TTY
+
+ANSIBLE_HOST_KEY_CHECKING=False
